@@ -1,0 +1,25 @@
+if you want to change the port :
+-------------------------------
+
+open server.js and change port number in portNumber variable
+
+install pm2: 
+------------
+npm i pm2 -g
+
+ssl :
+-----
+replace original cert.pem (certificate) and privkey.pem (private key)
+
+
+start service
+--------------
+
+node server.js 
+
+sudo pm2 start server.js --name video-service
+
+sudo pm2 status
+sudo pm2 start pid
+sudo pm2 stop pid
+sudo pm2 restart pid
